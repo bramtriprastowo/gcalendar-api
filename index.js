@@ -13,6 +13,4 @@ app.use(cookieParser());
 app.use(cors());
 app.use('/api/v1', apiRouter);
 
-const PORT = process.env.PORT || 3001;
-const HOST = process.env.HOST;
-app.listen(PORT, () => console.log(`Server: ${HOST}:${PORT}`));
+module.exports = app
